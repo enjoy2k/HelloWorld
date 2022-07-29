@@ -17,49 +17,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="46X-ms-oL1">
-                                <rect key="frame" x="58" y="215" width="298" height="45"/>
+                                <rect key="frame" x="58" y="228" width="298" height="45"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
                                 <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y7-VM-OCn">
-                                <rect key="frame" x="124.5" y="712.5" width="165.5" height="52.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-57-nHT">
+                                <rect key="frame" x="105.5" y="702.5" width="203" height="52.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165.5" id="z25-dJ-LE2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="203" id="kci-dH-AMT"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Text">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="32"/>
-                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Text" titleAlignment="automatic">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="46X-ms-oL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="JIG-MH-nUT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="46X-ms-oL1" secondAttribute="trailing" constant="58" id="L2u-qs-7wP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1y7-VM-OCn" secondAttribute="bottom" constant="97" id="R9i-mm-iIa"/>
-                            <constraint firstItem="1y7-VM-OCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UqV-vT-5NZ"/>
-                            <constraint firstItem="46X-ms-oL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="bLT-kX-SMJ"/>
+                            <constraint firstItem="46X-ms-oL1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="184" id="8l6-dW-5ev"/>
+                            <constraint firstItem="46X-ms-oL1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="B8U-cQ-rPO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gZm-57-nHT" secondAttribute="bottom" constant="107" id="C1H-O8-Wc4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="46X-ms-oL1" secondAttribute="trailing" constant="58" id="UD6-Qt-crT"/>
+                            <constraint firstItem="gZm-57-nHT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xf7-he-8M8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="46X-ms-oL1" id="2Xm-3n-Gp2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="78.348214285714278"/>
+            <point key="canvasLocation" x="-410.14492753623193" y="93.75"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
