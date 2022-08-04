@@ -8,14 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet var helloWorldLabel: UILabel! // IBOutlet Это связать элемента интерфейса "hello, world" с переменной "helloWorldLabel". В перечне строк появляется кружок, наведя курсор на который, подсвечивается элемент интерфейса с которым связана эта строка кода
+    
+    @IBOutlet var helloWorldLabel: UILabel!
+    @IBOutlet var showTextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        helloWorldLabel.isHidden = true
+        helloWorldLabel.textColor = .systemYellow
+        showTextButton.layer.cornerRadius = 15
     }
 
-
+    @IBAction func showTextButtonPressed() {
+        
+        if helloWorldLabel.isHidden {
+            showTextButton.setTitle("Show Text", for: .normal)
+        } else {
+            showTextButton.setTitle("Hide Text", for: .normal)
+        }
+    }
+    
 }
 
